@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Harshal's Point</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Manuale" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/css/mdb.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/js/mdb.min.js"></script>
+<style type="text/css">
+.Wallpaper{
+	height: 100vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	margin: 0px;
+	top: 0px;
+	z-index: -1;
+	background-image: url("resource/wallpaper.png");
+}
+.navbar{
+	margin-bottom: 0px;
+	background-color: black;
+	border: 0px;
+}
+.navbar-default{
+	background-image: none;
+}
+.navbar-header{
+	float:right;
+}
+.introductory-row{
+	color:black;
+	margin-top: 30vh;	
+	text-align: center;
+}
+.aplha-bground{
+	margin: 0px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: gray;
+	opacity: 0.8;
+	border-radius: 10px;
+	z-index: -1;
+}
+.name-container{
+}
+.About{
+	color: black;
+	margin-top: 1px;
+	background-color: white;
+	font-family: 'Rokkitt', serif;
+	
+}
+.profile-pic{
+	width: 80%;
+	height: auto;
+	border-radius: 50%;
+	resize: vertical;
+	margin: 10%;
+	box-shadow: 0 0 10px 5px gray;
+}
+.titles{
+	text-align: center;
+	font-size: 50px;
+}
+p{
+	font-size: large;
+}
+.desc{
+	font-size: 30px;
+}
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #777;
+}
+.navbar-default .navbar-brand {
+    color: white;
+}
+.navbar-default .navbar-brand>a:hover {
+    color: #777;
+}
+.summary{
+	margin: 0;
+	background-color: olive;
+	opacity: 0.7;
+}
+.summary_content{
+	font-size: 25px; 
+	text-align: center;
+	color: white;
+	padding-top: 3%;
+	padding-bottom: 2%;
+}
+.icon_holder{
+	text-align: center;
+	
+}
+.img_Bg{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-image: url("resource/PPBG2.jpg");
+	color: white;
+	margin-top: 1px;
+	padding-top: 50px;
+}
+.collapse-col{
+	padding: 0px;
+}
+.well{
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+.dropdown-button{
+	text-align: center;
+	margin-top: -30px;
+	height: 30px;
+}
+.link-holder{
+	margin-top: 1px;
+	background-color: black;
+	margin-bottom: 0px;
+	padding: 10px;
+	color: white;
+}
+.link-holder a:hover{
+	color: white;
+}
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+}
+a{
+	color: black;
+}
+a:hover{
+	color: #777;
+}
+.fa-5x {
+    font-size: 5em;
+}
+.fa-linkedin, .fa-facebook{
+	color: blue;
+}
+.fa-github{
+	color: olive;
+}
+.fa-download{
+	color: red;
+}
+.fa-stack-overflow{
+	color: orange;
+}
+.panel-title{
+	font-weight: bold;
+	font-size: 22px;
+}
+.panel-body{
+	font-size: 18px;
+}
+.work-ex-row1{
+	background-color: black;
+	color: white;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+.work-ex-row2{
+	background-color: black;
+	color: white;
+	padding-bottom: 40px;
+}
+.work-ex-row span{
+	font-weight: bold;
+}
+#company-Name{
+	float: left;
+}
+#joining-date{
+	float: right;
+}
+.job-desc{
+	float: left;
+
+}
+#projects{
+	background-color: black;
+	color: white;
+	margin-top: 1px;
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+#projects .panel-body{
+	color: black;
+}
+.panel-default>.panel-heading {
+	background-image: none;
+}
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: rgb(255, 204, 0);
+    border-color: rgb(255, 204, 0);
+}
+.opening{
+	height: 95vh ;
+	padding-top: 1vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-image: url("resource/opening1.png");
+}
+#Salutation{
+	margin-top: 40vh;
+	text-align: center;
+}
+.desc ul{
+	margin-bottom: 30px;
+}
+body{
+padding-top: 50px; 
+}
+</style>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.profile-pic').mouseover(function(){
+		$('.profile-pic').animate({
+			width: '82%',
+			margin: '9%'
+		}, 200);
+	});
+	$('.profile-pic').mouseout(function(){
+		$('.profile-pic').animate({
+			width: '80%',
+			margin: '10%'
+		}, 200);
+	});
+	
+	/* $('#dropdown-button').bind('click', function(){
+		$(this).parent().children().removeClass('.fa-caret-square-o-down');
+		$('#dropdown-button').addClass('.fa-caret-square-o-up');
+	}); */
+	
+});
+</script>
+<script type="text/javascript">
+new WOW().init();
+wow = new WOW({
+    boxClass: 'wow', // default
+    animateClass: 'animated', // default
+    offset: 0, // default
+    mobile: true, // default
+    live: true // default
+})
+wow.init();
+</script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<div>
+			<ul class="nav navbar-nav">
+				<li><a href="#link-about">About</a></li>
+				<li><a href="#link-work-ex">Experience</a></li>
+				<li><a href="#projects">Project</a></li>
+				<li><a href="#link-link">Links</a></li>
+			</ul>
+		</div>
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">Harshal Neelkamal</a>
+		</div>
+	</div>
+</nav>
+<!-- <div>
+<div class="Wallpaper">
+
+</div>
+<div class="container-fluid name-container">
+<div class="row introductory-row">
+	<div class="col-sm-4"></div>
+	<div class="col-sm-4">
+		<div class="aplha-bground"></div>
+		<h1><b>Hie, This is Harshal!</b></h1>
+	</div>
+	<div class="col-sm-4"></div>	
+</div>
+</div>
+</div> -->
+
+
+<div class="About container-fluid"> 
+
+<div class="row">
+	<div class= "col-sm-12 opening">
+				<h1 id="Salutation"><b>Hi, This is Harshal!</b></h1>
+	</div>	
+</div>
+
+	<div class="row img_Bg" id="link-about">
+		<div class="col-md-4 ">
+			<img alt="Harshal" src="resource/Harshal_square.jpg" class="profile-pic" >
+		</div>
+		<div class="col-md-8">
+		<div class = "row">
+			<div class="col-md-12">
+				<h2 class= "titles">About Me</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+			<div class="desc wow animated fadeInUp" >
+				<ol>
+					<li>Computer Systems Graduate Student with passion for Web and Mobile application development.</li>
+					<li>Former IOS developer at TATA Consultancy Services, India.</li>
+					<li>In constant search of new trends in the world of software and programming.</li>
+				</ol>
+			</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class= "col-md-12 dropdown-button">
+			<a class="fa fa-caret-square-o-down fa-2x" id="dropdown-button" role="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></a>
+		</div>
+		<div class="col-md-12 collapse-col">
+			<div class="collapse" id="collapseExample">
+  			<div class="well">
+				<div class="row summary">
+					<div class="col-md-8 col-md-offset-2">
+						<p class="summary_content">
+				I am known amongst my peers for my quirky and creative designing and programming traits. 
+				Designing and developing interactive UI over web and mobile applications is my primary areas of interest. 
+				With over a year of industrial experience of working on agile delivered projects and good understanding of mobile and web applications development combined with backend handling and database management skills, I consider myself a complete package for positions like mobile or web application developer. 
+				My key skills include: Spring MVC, Spring Security, Hibernate, Maven, Swift 3.0, Objective C, C, C++, Java, C#, HTML, CSS, MySQL, Java Script, JQuery, Java swing, etc. 
+						</p>
+					</div>
+				</div>
+  			</div>
+			</div>
+		</div>
+	</div>
+	<div class="row work-ex-row1" id="link-work-ex">
+		<div class = "col-md-12">
+			<h2 class= "titles">Work-Exp</h2>
+		</div>
+		<div class="col-sm-10 col-sm-offset-1">
+			<div id="job-head">
+				<h3 id="company-Name" class="wow animated fadeInUp">TATA Consultancy Services, India | <span>Associate Systems Engineer</span></h3>
+				<h3 id="joining-date" class="wow animated fadeInUp">Nov'15-Dec'16</h3>
+			</div>
+			<div class="panel-body job-desc">
+				<ol>
+					<li class="wow animated fadeInUp">Worked in DESS workforce on agile delivered projects where I developed iOS applications for Globally recognised marathons like NYC full run and BOA Chicago marathon using both Objective C and Swift.</li>
+					<li class="wow animated fadeInUp">Underwent a training program in ASP.Net where I developed a multi user railway ticketing system in ASP.NET framework using C#.</li>
+					<li class="wow animated fadeInUp">Application for NYC full 2016 had over 300k downloads with over 200k downloads in a single day.</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<div class="row work-ex-row2">
+		<div class="col-sm-10 col-sm-offset-1">
+			<div id="job-head">
+				<h3 id="company-Name" class="wow animated fadeInUp">NCC Telecoms Pvt Ltd, India | <span>Student Intern</span></h3>
+				<h3 id="joining-date" class="wow animated fadeInUp">Mar'13-May'13</h3>
+			</div>
+			<div class="panel-body job-desc">
+				<ol>
+					<li class="wow animated fadeInUp">Worked on software to automate electronic appliances in residential and commercial premises.</li>
+					<li class="wow animated fadeInUp">Worked on android application to provide integrated controls of electronic appliances.</li>
+					<li class="wow animated fadeInUp">Worked on 8051 micro controller for IOT applications.</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<!--  
+	ACCORDIAN
+	-->
+<div class="row" id="projects">
+<div class = "col-md-12">
+	<h2 class= "titles">Projects</h2>
+</div>
+<div class = "col-md-10 col-md-offset-1">	
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default wow animated fadeInUp">
+    <div class="panel-heading" data-wow-delay="0.0s" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Image Recognition | (OpenCV, Java Swing)
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+		<ol>
+			<li>Java application with supervised and un-supervised learning using KNN and K-means techniques.</li>
+			<li>Implemented self-written classifiers using KDTree and Graph data structures.</li>
+			<li>Tweaked processing methods used in Eigen Faces technique to extract features from image.</li>
+		</ol>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default wow animated fadeInUp">
+    <div class="panel-heading" data-wow-delay="0.0s" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Elastic Computing Stimulator | (Java Swings)
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+		<ol>
+			<li>Stimulated scalable architecture to process incoming server requests as in elastic computing.</li>
+			<li>Conducted empirical analysis to examine request processing efficiency of scalable architecture.</li>
+		</ol>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default wow animated fadeInUp">
+    <div class="panel-heading" data-wow-delay="0.0s" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Online Tutorial portal | (Spring MVC, Spring security, Hibernate, Maven)
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+		<ol>
+			<li>Created an multi role, multi user online tutorial portal for users to post and refer study materials online.</li>
+			<li>Application was constructed on Spring MVC framework and was secured using Spring Security.</li>
+			<li>Database operations were handled using Hibernate with maven integration to resolve dependencies.</li>
+		</ol>
+      </div>
+    </div>
+  </div>
+   <div class="panel panel-default wow animated fadeInUp">
+    <div class="panel-heading" data-wow-delay="0.0s" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+          Crystal generator using Automata Rules | (Java Swings)
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+		<ol>
+			<li>Multithreaded Swing Application to Study crystal growth for variable automata generation rules.</li>
+			<li>Application supports stimulation of crystal generation in rectangular and Hexagonal grids.</li>
+		</ol>
+      </div>
+    </div>
+  </div>
+   <div class="panel panel-default wow animated fadeInUp">
+    <div class="panel-heading " data-wow-delay="0.0s" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+          Jobs portal with weather forecast | (Spring MVC, Hibernate, Maven, http Client)
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+		<ol>
+			<li>Created an online jobs portal for users to post and view online job openings.</li>
+			<li>Integrated Google feeds and maps to get news on employers and direction to their office location.</li>
+			<li>Integrated Open weather maps API to get global weather data using http Client.</li>
+		</ol>
+      </div>
+    </div>
+  </div>
+   <div class="panel panel-default wow animated fadeInUp">
+    <div class="panel-heading " data-wow-delay="0.0s" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+          Resistor Measurer and Segregator | (OpenCV, Robotics, Arduino UNO)
+        </a>
+      </h4>
+    </div>
+    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+		<ol>
+			<li>Machine for value based segregation of resistors without human intervention.</li>
+			<li>Used vertical robotic arm for physical manoeuvres and OpenCV libraries for image processing.</li>
+			<li>Used Multidimensional vector based classification of features for colour detection.</li>
+		</ol>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+	<!--  
+	ACCORDIAN
+	-->
+	
+	<div class="row link-holder" id="link-link">
+		<div class="col-sm-12">
+			<div class = "col-sm-2 icon_holder col-sm-offset-1">
+				<a class="fa fa-linkedin fa-5x wow animated fadeInUp" data-wow-delay="0.0s" href="https://www.linkedin.com/in/harshal26/" target="_blank" aria-hidden="true"></a>	
+				<h4>LinkedIn</h4>	
+			</div>
+			<div class = "col-sm-2 icon_holder">
+				<a class="fa fa-github fa-5x wow animated fadeInUp" data-wow-delay="0.0s" href="https://github.com/MobilityHarshal?tab=repositories" target="_blank" aria-hidden="true"></a>	
+				<h4>GitHub</h4>		
+			</div>
+			<div class = "col-sm-2 icon_holder">
+				<a class="fa fa-facebook fa-5x wow animated fadeInUp" data-wow-delay="0.0s" href="https://www.facebook.com/harshal.neelkamal" target="_blank" aria-hidden="true"></a>		
+				<h4>facebook</h4>		
+			</div>
+			<div class = "col-sm-2 icon_holder">
+				<a class="fa fa-stack-overflow fa-5x wow animated fadeInUp" data-wow-delay="0.0s" href="https://stackoverflow.com/users/7258827/harshal" target="_blank" aria-hidden="true"></a>		
+				<h4>StackOverflow</h4>
+			</div>
+			<div class = "col-sm-2 icon_holder">
+				<a class="fa fa-download fa-5x wow animated fadeInUp" data-wow-delay="0.0s" href="resource\HarshalResume_Aug_19.pdf" target="-blank" aria-hidden="true"></a>		
+				<h4>Resume</h4>
+			</div>
+			
+		</div>
+	</div>
+	
+</div>
+</body>
+</html>
